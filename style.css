@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+}
+
+html, body {
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+}
+
+aside {
+  grid-area: 1 / 1 / 4 / 2;
+  padding: 30px;
+}
+
+.logo {
+  padding-bottom: 45px;
+}
+
+.menu ul {
+  padding-bottom: 60px;
+}
+
+header {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  padding-inline: 50px;
+  padding-block: 30px;
+}
+
+.user,
+.header-nav {
+  justify-self: end;
+}
+
+main {
+  grid-column: 2 / 2;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 30px;
+  gap: 30px;
+}
+
+
+article {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.projects-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 40px;
+}
+
+.card {
+  padding: 40px 40px 10px;
+  height: 260px;
+}
+
+.announcements {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.announcement-card {
+  padding: 30px 25px ;
+  padding-top: 20px;
+}
+
+.content-heading {
+  padding-bottom: 20px;
+}
+
+.trending {
+  grid-area: 2 / 2 / 2 / 2;
+}
+
+.trending-card {
+  padding: 30px 25px;
+}
