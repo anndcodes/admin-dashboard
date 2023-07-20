@@ -1,7 +1,8 @@
 :root {
   /* colors */
   --white: #fff;
-  --off-white: #f8f6ed;
+  --off-white: #f0f0f0;
+  /* --off-white: #f8f6ed; */
   --purple: #4C5E91;
   --pink: #F79EB1;
   --dark-purple: #441c53;
@@ -79,14 +80,36 @@ aside {
   height: 28px;
 }
 
-
+/*  === header === */
 header {
   background: var(--white);
   color: var(--dark-purple);
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
-  padding-inline: 50px;
-  padding-block: 30px;
+  gap: 25px;
+  padding-inline: 70px;
+  padding-block: 20px;
+}
+
+header .top-line {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(177px, 1fr));
+}
+
+/* header .top-line, */
+header .bottom-line {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.header-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.user-pic {
+  border-radius: 50%;
 }
 
 .user,
@@ -94,8 +117,72 @@ header {
   justify-self: end;
 }
 
+/* header top line */
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.searchbar input {
+  background: var(--off-white);
+  width: 850px;
+  height: 40px;
+  border-radius: 20px;
+  cursor:text;
+}
+
+.user {
+  grid-column: 2 / 2;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr;
+  gap: 25px;
+  align-items: center;
+}
+
+.user .user-name {
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+/* header bottom line */
+.user-info {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  align-items: center;
+}
+
+.user-info p {
+  font-weight: 700;
+}
+
+.user-info h1 {
+  font-weight: 800;
+}
+
+.user-info h1 > span {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.user .small {
+  width: 50px;
+  height: 50px;
+}
+
 button {
   font-family: inherit;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.header-nav {
+  display: flex;
+  gap: 15px;
 }
 
 aside,
@@ -104,6 +191,7 @@ aside,
   color: var(--white);
 }
 
+/* === main content === */
 main {
   background: var(--off-white);
   grid-column: 2 / 2;
