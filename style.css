@@ -3,6 +3,7 @@
   --white: #fff;
   --off-white: #f0f0f0;
   --purple: #4C5E91;
+  --transition-color: #31406b;
   --pink: #F79EB1;
   --dark-purple: #441c53;
   --dark-grey: #4e4433;
@@ -198,16 +199,6 @@ input:-webkit-autofill:active {
   height: 50px;
 }
 
-button {
-  font-family: inherit;
-  font-size: 1.7rem;
-  font-weight: 600;
-  border-radius: 20px;
-  width: 100px;
-  height: 40px;
-  cursor: pointer;
-}
-
 .header-nav {
   display: flex;
   gap: 15px;
@@ -217,6 +208,26 @@ aside,
 .header-nav button {
   background-color: var(--purple);
   color: var(--white);
+}
+
+button {
+  font-family: inherit;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+}
+
+button:active{
+  box-shadow: none;
+}
+
+button:hover {
+  background: var(--transition-color);
 }
 
 /* === main content === */
