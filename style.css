@@ -19,6 +19,7 @@
   padding: 0;
   border: none;
   list-style: none;
+  text-decoration: none;
 }
 
 html {
@@ -189,9 +190,14 @@ input:-webkit-autofill:active {
   font-weight: 800;
 }
 
-.user-info h1 > span {
+.info h1 > span {
   font-size: 2.4rem;
   font-weight: 700;
+}
+
+.info span a:hover,
+.info span a:hover:active {
+  color: var(--pink);
 }
 
 .user .small {
