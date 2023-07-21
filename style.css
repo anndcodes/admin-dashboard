@@ -130,12 +130,29 @@ header .bottom-line {
   transition: transform .2s;
 }
 
-.searchbar input {
+input[type="search"] {
   background: var(--off-white);
   width: 850px;
   height: 40px;
   border-radius: 20px;
   cursor:text;
+  padding: 10px 25px;
+  font-family: inherit;
+  font-size: 1.6rem;
+  color: var(--dark-grey);
+}
+
+input[type="search"]:focus {
+  border: 2px solid var(--pink);
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 .user {
