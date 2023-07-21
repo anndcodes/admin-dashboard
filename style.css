@@ -2,7 +2,7 @@
   /* colors */
   --white: #fff;
   --off-white: #f0f0f0;
-  --purple: #4C5E91;
+  --blue: #4C5E91;
   --transition-color: #31406b;
   --pink: #F79EB1;
   --dark-purple: #441c53;
@@ -206,7 +206,7 @@ input:-webkit-autofill:active {
 
 aside,
 .header-nav button {
-  background-color: var(--purple);
+  background-color: var(--blue);
   color: var(--white);
 }
 
