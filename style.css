@@ -67,6 +67,12 @@ aside {
   grid-template-columns: 28px 1fr;
   align-items: center;
   gap: 15px;
+  transition: transform .2s;
+  cursor: pointer;
+}
+
+.menu-nav:hover {
+  transform: scale(1.1); 
 }
 
 .menu-nav h2 {
@@ -121,6 +127,7 @@ header .bottom-line {
   display: flex;
   align-items: center;
   gap: 13px;
+  transition: transform .2s;
 }
 
 .searchbar input {
@@ -137,6 +144,11 @@ header .bottom-line {
   grid-template-columns: 0.1fr 1fr 1fr;
   gap: 25px;
   align-items: center;
+  transition: transform .2s;
+}
+
+.header-icon:hover {
+ transform: scale(1.1); 
 }
 
 .user .user-name {
@@ -246,6 +258,11 @@ article {
   position: relative;
   bottom: 50px;
   padding-right: 40px;
+  transition: transform .2s;
+}
+
+.card-icons img:hover {
+  transform: scale(1.2); 
 }
 
 .card-icons img {
