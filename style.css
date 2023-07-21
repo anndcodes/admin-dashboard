@@ -204,6 +204,7 @@ article {
   grid-area: 1 / 1 / 3 / 2;
 }
 
+/* === project cards === */
 .projects-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -225,6 +226,16 @@ article {
   height: 100%;
   padding: 40px 40px 10px;
   border-radius: 0px 13px 13px 0px;
+}
+
+.project-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.project-txt {
+  font-size: 1.7rem;
+  padding-top: 5px;
 }
 
 .announcements {
@@ -256,6 +267,6 @@ article {
   padding-bottom: 20px;
 }
 
-.txt {
+.project-txt {
   color: var(--dark-grey);
 }
