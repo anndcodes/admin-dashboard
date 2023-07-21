@@ -218,6 +218,7 @@ article {
   height: 260px;
   border-radius: 13px;
   padding-left: 10px;
+  box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 .card .inner-card {
@@ -266,6 +267,7 @@ article {
 .trending-cards {
   border-radius: 13px;
   background-color: var(--white);
+  box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 .announcement-cards {
