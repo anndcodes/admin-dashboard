@@ -285,6 +285,11 @@ article {
   grid-template-columns: 0.1fr 1fr;
   gap: 20px;
   align-items: center;
+  padding: 16px;
+}
+
+.trending-cards {
+  padding: 20px;
 }
 
 .trending-card .user-pic {
@@ -297,6 +302,12 @@ article {
 .announcements-title,
 .trending-title {
   color: var(--dark-purple);
+}
+
+.announcements-title,
+.trending-title {
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .content-heading {
