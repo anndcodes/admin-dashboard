@@ -253,6 +253,7 @@ article {
   cursor: pointer;
 }
 
+/* === announcements card ===  */
 .announcements {
   grid-area: 1 / 2 / 2 / 3;
 }
@@ -261,10 +262,17 @@ article {
   grid-area: 2 / 2 / 2 / 2;
 }
 
+.announcement-cards,
+.trendind-cards {
+  border-radius: 13px;
+  background-color: var(--white);
+}
+
 .announcement-card,
 .trending-card {
   background: var(--white);
   padding: 30px 25px ;
+  border-radius: 13px;
 }
 
 .announcement-card {
@@ -282,6 +290,8 @@ article {
   padding-bottom: 20px;
 }
 
-.project-txt {
+.project-txt, 
+.announcement-txt,
+.trending-txt {
   color: var(--dark-grey);
 }
