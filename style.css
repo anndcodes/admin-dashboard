@@ -95,6 +95,8 @@ header {
   gap: 25px;
   padding-inline: 70px;
   padding-block: 20px;
+  box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 header .top-line {
