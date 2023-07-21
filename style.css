@@ -2,7 +2,6 @@
   /* colors */
   --white: #fff;
   --off-white: #f0f0f0;
-  /* --off-white: #f8f6ed; */
   --purple: #4C5E91;
   --pink: #F79EB1;
   --dark-purple: #441c53;
@@ -214,10 +213,18 @@ article {
 }
 
 .card {
-  background: var(--white);
-  padding: 40px 40px 10px;
+  background: var(--pink);
   height: 260px;
-  border-left: 12px solid var(--pink);
+  border-radius: 13px;
+  padding-left: 10px;
+}
+
+.card .inner-card {
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  padding: 40px 40px 10px;
+  border-radius: 0px 13px 13px 0px;
 }
 
 .announcements {
