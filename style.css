@@ -5,8 +5,10 @@
   --blue: #4C5E91;
   --transition-color: #31406b;
   --pink: #F79EB1;
+  --dark-pink: #e48197;
   --dark-purple: #441c53;
   --dark-grey: #4e4433;
+  --scrollbar: #F2E7D2;
 
   /* fonts */
   --text: 'Karla', sans-serif;
@@ -373,4 +375,22 @@ article {
 .announcement-txt,
 .trending-txt {
   color: var(--dark-grey);
+}
+
+/* === scrollbar === */
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbar)
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--pink);
+  border: 5px solid var(--scrollbar);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-pink)
 }
