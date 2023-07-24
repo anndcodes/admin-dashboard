@@ -1,6 +1,6 @@
 # Admin Dashboard
 
-An **"admin dashboard"** page from _**The Odim Project**_ curriculum.
+An **"admin dashboard"** page from _**The Odin Project**_ curriculum.
 
 ![Page Screen](assets/pagescreen.png)
 
